@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<h2>Mars Rover</h2>
+<div class="container">
+    <form action="/Home/MoveRover" method="post">
+        <div class="row">
+            <div class="col-25">
+                <label for="plateau">Plateau Area:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="plateau" name="plateau" placeholder="55">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="position">Rover Position:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="position" name="position" placeholder="12N">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="commands">Commands:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="commands" name="commands" placeholder="LMLMLMLMM">
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Evaluate">
+        </div>
+    </form>
+</div>
+
